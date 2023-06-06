@@ -1,0 +1,101 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            /* background-image: linear-gradient(transparent, rgb(248, 245, 244)); */
+            background-color: black;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color:white
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <center>
+            <br><br>
+            <h1>BOOKING FORM</h1><br><br><br>
+        </center>
+        <form method="post" class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="email">Name:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" name="name" id="email" placeholder="Enter name" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="num">Phone Number:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" name="phone" id="num" placeholder="Enter Number">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="Address">Depart from:</label>
+                <div class="col-sm-4">
+                    <input class="form-control" rows="5" id="text" name="from" type="text" placeholder="Enter Address">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="pwd">Destination:</label>
+                <div class="col-sm-4">
+                    <input class="form-control" rows="5" id="text" name="to" type="text" placeholder="Enter Address">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="date">Departure Date:</label>
+                <div class="col-sm-4">
+                    <input type="date" class="form-control" pattern="\d{4}-\d{2}-\d{2}" name="date" id="departuretime">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="select">Package:</label>
+                <div class="col-sm-4">
+                    <select style="color: black;" id="pakage " name="package">
+                        <option >Choose...</option>
+                        <option>Economy</option>
+                        <option>Business</option>
+                        <option>First Class</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="quantity">Number of Passengers :</label>
+                <div class="col-sm-1">
+                    <input class="form-control" rows="5" name="count" id="quantity" style="color: black;"  type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-4 col-sm-10">
+                    <div class="checkbox">
+                        <label><input type="checkbox">I Agree to the Terms and conditions</label>
+                    </div>
+                </div>
+            </div>
+            <center>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">Submit</button>
+
+                </div>
+            </center>
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
